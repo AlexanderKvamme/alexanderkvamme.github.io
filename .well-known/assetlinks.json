@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.tietoevry.saa.android.telenor",
+      "package_name": "com.tietoevry.saa.android.telenor.debug",
       "sha256_cert_fingerprints":
         ["31:28:2D:56:4C:3B:17:44:11:1F:5F:99:88:FC:7F:34:FC:7B:67:BC:B3:88:16:E2:72:CE:B5:1F:47:06:4A:48"]
     }
