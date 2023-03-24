@@ -1,11 +1,14 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.tietoevry.saa.android.telenor",
-      "sha256_cert_fingerprints":
-        ["BE:CE:54:52:18:BC:18:61:A9:81:11:04:2A:49:89:52:B8:8F:EA:3E:14:0C:8A:53:AB:1C:20:8F:B7:33:C9:2D"]
+      "sha256_cert_fingerprints": [
+        "26:19:DD:96:D0:D9:47:D2:25:22:2C:74:9A:50:A9:C6:7E:92:C9:29:12:8A:11:1B:C9:57:1D:01:DF:05:61:44"
+      ]
     }
   }
 ]
