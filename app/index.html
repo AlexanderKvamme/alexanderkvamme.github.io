@@ -26,18 +26,19 @@
       function DetectAndRedirect() {
         if (getMobileOS() == "Android") {
         	window.location.href = "https://play.google.com/store/apps/details?id=com.tietoevry.saa.android.telenor";
-        }
-        if (getMobileOS() == "iOS") {
+        } else if (getMobileOS() == "iOS") {
 			// FIXME: When an app store link exists. Link to it here
 			window.location.href = "www.ios.ios"
-        }
+        } else if (getMobileOS() == false) {
+			window.location.href = "self-url-qr-code-no-cdn.html"
+		}
       };
 	</script>
 </head>
 	<body onload="DetectAndRedirect()">
 		<h1>/app</h1>
 		<h2>This site is used to test app linking</h2>
-		<p>iOS app is not released at this time, so link will not work</p>
+		<p>NB: iOS app is not released at this time, so link will not work</p>
 	</body>
 </html>
 
