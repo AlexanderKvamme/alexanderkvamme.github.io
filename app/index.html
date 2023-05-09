@@ -11,16 +11,18 @@
 			// Windows Phone must come first because its UA also contains "Android"
 			if (/windows phone/i.test(userAgent)) {
 				return "Windows Phone";
-			}
+			} else 
 			// Android detection 
 			if (/Android/i.test(userAgent)) {
 				return "Android";
-			}
+			} else
 			// iOS detection 
 			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
 				return "iOS";
+			} else {
+				console.log("false")
+				return false;
 			}
-			return false;
     	}
 
       function DetectAndRedirect() {
