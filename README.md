@@ -8,6 +8,8 @@ The point of hosting a website like this is to be able to open the app from a we
 
 Leading the user to `[https://alexanderkvamme.github.io/app/?sessionId=12345](https://alexanderkvamme.github.io/app/?sessionId=12345)` on a mobile device will lead the user to app/play store if they dont have the app installed. If they DO have the app installed though, the app will open, and the sessionId will be passed in for the app to use for the rest of the identity proofing session.
 
+If the user is on a computer, a QR-code will be displayed that the user can scan with a mobile device to get redirected to the appropriate app or app store.
+
 # How does it work?
 
 To be able to use univer linking or app linking, you must control a domain and place one file for android `assetlinks.json` and one file for Apple `apple-app-site-associateion`.
