@@ -11,5 +11,18 @@
         "78:10:8F:E7:19:0F:FF:96:5B:69:EA:EF:23:D1:EA:CB:DC:7E:00:21:B0:7D:46:F3:55:F4:30:FF:5E:27:A2:F2"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tietoevry.idproofing.plus.app.android",
+      "sha256_cert_fingerprints": [
+        "78:10:8F:E7:19:0F:FF:96:5B:69:EA:EF:23:D1:EA:CB:DC:7E:00:21:B0:7D:46:F3:55:F4:30:FF:5E:27:A2:F2",
+        "D4:C6:96:40:F0:5D:B6:D8:38:D8:3F:6A:52:94:DF:D0:ED:7F:4B:B2:DD:BB:76:3C:7D:14:1C:C2:87:4F:64:AB"
+      ]
+    }
   }
 ]
