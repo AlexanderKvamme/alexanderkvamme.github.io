@@ -2,7 +2,7 @@
     "applinks": {
     "details": [
                  {
-                   "appIDs": [ "54KTRMAZEH.com.tietoevry.saa.ios.telenor"],
+                   "appIDs": [ "54KTRMAZEH.com.tietoevry.saa.ios.telenor", "54KTRMAZEH.com.tietoevry.idproofing.plus.app.ios" ],
                    "components": [
                                    { 
                                        "/": "/*",
