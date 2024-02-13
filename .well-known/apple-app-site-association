@@ -2,9 +2,9 @@
     "applinks": {
     "details": [
                  {
-                   "appIDs": [ "54KTRMAZEH.com.tietoevry.saa.ios.telenor", "54KTRMAZEH.com.tietoevry.idproofing.plus.app.ios" ],
+                   "appIDs": [ "P3S3D37E22.com.tietoevry.saa.ios.telenor.asa", "P3S3D37E22.com.tietoevry.mobile.ios.sdkplus.demo" ],
                    "components": [
-                                   { 
+                                   {
                                        "/": "/*",
                                        "comment": ""
                                    },
@@ -16,5 +16,5 @@
                     "paths": [ "*"]
                   }
                ]
-    } 
+    }
 }
