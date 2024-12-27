@@ -2,7 +2,7 @@
     "applinks": {
     "details": [
                  {
-                   "appIDs": [ "P3S3D37E22.com.tietoevry.saa.ios.telenor.asa", "P3S3D37E22.com.tietoevry.mobile.ios.sdkplus.demo" ],
+                   "appIDs": [ "52VSB9N5CT.com.hoi.flashcardsApp" ],
                    "components": [
                                    {
                                        "/": "/*",
