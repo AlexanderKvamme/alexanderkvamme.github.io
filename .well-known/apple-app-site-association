@@ -2,18 +2,8 @@
     "applinks": {
     "details": [
                  {
-                   "appIDs": [ "52VSB9N5CT.com.hoi.flashcardsApp" ],
-                   "components": [
-                                   {
-                                       "/": "/*",
-                                       "comment": ""
-                                   },
-                                   {
-                                       "/": "*",
-                                       "comment": ""
-                                    }
-                                  ],
-                    "paths": [ "*"]
+                   "appID": "52VSB9N5CT.com.hoi.flashcardsApp",
+                    "paths": ["*"]
                   }
                ]
     }
