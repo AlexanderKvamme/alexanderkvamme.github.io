@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        // Extract the authorization code from the URL
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        // Get the code and state parameters
+        const code = getQueryParam('code');
+        const state = getQueryParam('state');
+        
+        // Construct the redirect URL back to your app
+        let redirectUrl = `flashcardsapp://callback?code=${code}`;
+        if (state) {
+            redirectUrl += `&state=${state}`;
+        }
+        
+        // Redirect to your app
+        window.location.href = redirectUrl;
+    </script>
+</head>
+<body>
+    <h1>Redirecting back to the app...</h1>
+    <p>If you are not redirected automatically, please close this window and return to the app.</p>
+</body>
+</html>
