@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flashcards</title>
+    <style>
+        :root { color-scheme: light; }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #E7E5D8;
+            color: #2b2b2b;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            padding: 24px;
+        }
+        .card {
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+        .emoji { font-size: 64px; line-height: 1; margin-bottom: 16px; }
+        h1 { font-size: 26px; margin: 0 0 8px; }
+        p { font-size: 16px; line-height: 1.45; color: #5b5b54; margin: 0 0 24px; }
+        .btn {
+            display: inline-block;
+            background: #1c1c1c;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 28px;
+            border-radius: 14px;
+        }
+        .hint { margin-top: 18px; font-size: 13px; color: #8a8a80; }
+        .generic h1 { font-size: 22px; }
+    </style>
+</head>
+<body>
+    <div class="card" id="content">
+        <div class="emoji">📚</div>
+        <h1>Open this deck in Flashcards</h1>
+        <p>You've been shared a flashcard deck. Get the app to follow it and study, with updates from the author as they edit it.</p>
+        <a class="btn" href="https://apps.apple.com/app/id6739949798">Get Flashcards</a>
+        <div class="hint">Already have the app? Open this link from Messages or Notes to jump straight in.</div>
+    </div>
+
+    <script>
+        // The app intercepts /deck/<id> links via universal links when installed.
+        // Reaching this page means the app isn't installed (or this is desktop),
+        // so we just guide the visitor to the App Store. For non-/deck/ paths,
+        // show a simpler message.
+        (function () {
+            var path = window.location.pathname || "";
+            if (path.indexOf("/deck/") !== 0) {
+                document.getElementById("content").innerHTML =
+                    '<div class="emoji">📚</div>' +
+                    '<div class="generic">' +
+                    '<h1>Page not found</h1>' +
+                    '<p>This page doesn\'t exist. Check out the Flashcards app instead.</p>' +
+                    '<a class="btn" href="https://apps.apple.com/app/id6739949798">Get Flashcards</a>' +
+                    '</div>';
+            }
+        })();
+    </script>
+</body>
+</html>
